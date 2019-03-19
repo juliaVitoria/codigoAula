@@ -1,0 +1,23 @@
+<?php
+if(filter_input(INPUT_GET, "aluno")&&
+   filter_input(INPUT_GET, "ano")&&
+   filter_input(INPUT_GET, "n1")&&
+   filter_input(INPUT_GET, "n2")&&
+   filter_input(INPUT_GET, "n3")&&
+   filter_input(INPUT_GET, "n4")
+) {
+$Aluno = filter_input(INPUT_GET, "aluno");
+$Ano = filter_input(INPUT_GET, "ano");
+$N1 = filter_input(INPUT_GET, "n1");
+$N2 = filter_input(INPUT_GET, "n2");
+$N3 = filter_input(INPUT_GET, "n3");
+$N4 = filter_input(INPUT_GET, "n4");
+   echo "Aluno = " . $Aluno;
+   echo "Ano = " . $Ano;
+   echo "n1 = " . $n1;
+   echo "n2 = " . $n2;
+   echo "n3 = " . $n3;
+}else{
+	echo "Campos não preenchidos!!!";
+}
+?>
